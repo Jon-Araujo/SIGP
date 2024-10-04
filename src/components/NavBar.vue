@@ -1,6 +1,8 @@
 <template>
   <nav>
-    <img src="../assets/eb-logo.png" alt="Logo do EB." />
+    <router-link to="/">
+      <img src="../assets/eb-logo.png" alt="Logo do EB." />
+    </router-link>
     <h1>{{ pag }}</h1>
     <img src="../assets/logo-blog.png" alt="Logo do Btl." />
   </nav>
@@ -29,7 +31,8 @@ h1 {
   font-size: 2rem;
   color: #00adb5;
 }
-img {
+img,
+router-link {
   height: 100%;
   padding: 0 5%;
 }
